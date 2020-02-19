@@ -11,6 +11,7 @@ public interface PersonService {
     List<Person> findAllPeople();
     Optional<Person> findById(Integer personId) throws Exception;
     List<Person> insertPeopleData(List<Person> personList) throws Exception;
+    Person findByLastName(String lastName) throws Exception;
     void updatePeopleData(List<Person> people) throws Exception;
     void deletePeopleData(List<Integer> people) throws Exception;
 }

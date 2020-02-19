@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Logger;
 
 @Service
 public class PersonServiceImpl implements PersonService {
@@ -58,5 +59,11 @@ public class PersonServiceImpl implements PersonService {
         newPerson.setLastName(originalPerson.getLastName());
         newPerson.setCareer(originalPerson.getCareer());
         return newPerson;
+    }
+
+    public Person findByLastName(String lastName) {
+        Logger logger = Logger.getLogger(PersonServiceImpl.class.getName());
+        logger.info("find by last name " + lastName);
+        return personRepository.findByLastName(lastName);
     }
 }

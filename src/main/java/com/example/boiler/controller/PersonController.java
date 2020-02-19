@@ -26,6 +26,12 @@ public class PersonController {
         return ResponseEntity.ok(personService.findById(personId));
     }
 
+    @GetMapping("/search/{lastName}")
+    ResponseEntity<Person> findByLastName(@PathVariable String lastName) throws Exception {
+
+        return ResponseEntity.ok(personService.findByLastName(lastName));
+    }
+
     @PostMapping("")
     public ResponseEntity<List<Person>> createPeople(@RequestBody List<Person> personList) throws Exception {
         return ResponseEntity.ok(personService.insertPeopleData(personList));
