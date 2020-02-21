@@ -15,9 +15,3 @@ spring.datasource.url=jdbc:h2:mem:testdb
 To
 spring.datasource.url=jdbc:h2:file:/data/demo
 Or something along those lines.....
-
-To Do's
-Add customized sql queries to repository.
-Build Front End
-Connect to backend.
-Add some unit testing
