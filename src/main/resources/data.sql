@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS billionaires;
+DROP TABLE IF EXISTS people;
 
 INSERT INTO people (first_name, last_name, career) VALUES
 ('Aliko', 'Dangote', 'Engineer'),

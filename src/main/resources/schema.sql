@@ -6,3 +6,10 @@ CREATE TABLE people (
   last_name VARCHAR(250) NOT NULL,
   career VARCHAR(250) DEFAULT NULL
 );
+
+--CREATE TABLE matches (
+--  id INT AUTO_INCREMENT PRIMARY KEY,
+--  person_1_id INT FOREIGN KEY REFERENCES people(id),
+--  person_2_Id INT FOREIGN KEY REFERENCES people(id),
+--  dateOfMatch DATE
+--)
