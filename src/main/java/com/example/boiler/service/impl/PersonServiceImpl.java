@@ -1,6 +1,8 @@
 package com.example.boiler.service.impl;
 
+import com.example.boiler.entity.Career;
 import com.example.boiler.entity.Person;
+import com.example.boiler.repository.CareerRepository;
 import com.example.boiler.repository.PersonRepository;
 import com.example.boiler.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,7 @@ public class PersonServiceImpl implements PersonService {
 
     @Autowired
     PersonRepository personRepository;
+
 
     public List<Person> findAllPeople() {
         return personRepository.findAll();

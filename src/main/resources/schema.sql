@@ -1,15 +1,14 @@
 DROP TABLE IF EXISTS people;
 
+CREATE TABLE careers (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   career VARCHAR(250) NOT NULL
+);
+
 CREATE TABLE people (
   id INT AUTO_INCREMENT  PRIMARY KEY,
   first_name VARCHAR(250) NOT NULL,
   last_name VARCHAR(250) NOT NULL,
-  career VARCHAR(250) DEFAULT NULL
+  career_id INT,
+  foreign key (career_id) references careers(id)
 );
-
---CREATE TABLE matches (
---  id INT AUTO_INCREMENT PRIMARY KEY,
---  person_1_id INT FOREIGN KEY REFERENCES people(id),
---  person_2_Id INT FOREIGN KEY REFERENCES people(id),
---  dateOfMatch DATE
---)

@@ -1,5 +1,6 @@
 package com.example.boiler.controller;
 
+import com.example.boiler.entity.Career;
 import com.example.boiler.entity.Person;
 import com.example.boiler.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -14,4 +14,5 @@ public interface PersonService {
     Person findByLastName(String lastName) throws Exception;
     void updatePeopleData(List<Person> people) throws Exception;
     void deletePeopleData(List<Integer> people) throws Exception;
+
 }

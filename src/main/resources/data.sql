@@ -1,6 +1,10 @@
-DROP TABLE IF EXISTS people;
 
-INSERT INTO people (first_name, last_name, career) VALUES
-('Aliko', 'Dangote', 'Engineer'),
-('Bill', 'Gates', 'Sales'),
-('Folrunsho', 'Alakija', 'Product Owner');
+INSERT INTO careers(career) values
+('engineer'),
+('sales'),
+('product owner');
+
+INSERT INTO people (first_name, last_name, career_id) VALUES
+('Aliko', 'Dangote', 1),
+('Bill', 'Gates', 2),
+('Folrunsho', 'Alakija', 3);
