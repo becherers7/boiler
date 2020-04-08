@@ -1,5 +1,6 @@
 package com.example.boiler.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
@@ -27,6 +28,7 @@ public class Person {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "career_id")
+    @JsonBackReference
     private Career career;
 
     public Integer getPersonId() {

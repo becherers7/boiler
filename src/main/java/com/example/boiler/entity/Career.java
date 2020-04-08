@@ -1,6 +1,7 @@
 package com.example.boiler.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
@@ -23,5 +24,6 @@ public class Career {
     private String career;
     //career references the entity Person property career
     @OneToMany(mappedBy = "career")
+    @JsonManagedReference
     private List<Person> personList;
 }
