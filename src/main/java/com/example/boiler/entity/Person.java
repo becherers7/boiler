@@ -23,8 +23,6 @@ public class Person {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
-//    @Column(name = "career")
-//    private String career;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "career_id")

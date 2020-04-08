@@ -22,8 +22,9 @@ public class Career {
     private Integer careerId;
     @Column(name = "career")
     private String career;
+
     //career references the entity Person property career
     @OneToMany(mappedBy = "career")
-    @JsonManagedReference
+    @JsonManagedReference//helps prevent infinite recursion
     private List<Person> personList;
 }
